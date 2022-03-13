@@ -4,6 +4,11 @@ const baseWebpackConfig = require("./webpack.base.conf");
 // Production config
 const productionWebpackConfig = merge(baseWebpackConfig, {
   mode: "production",
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
   plugins: []
 });
 
