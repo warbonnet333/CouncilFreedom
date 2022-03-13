@@ -1,0 +1,59 @@
+.footer {
+  background: $black;
+  color: $white;
+  min-height: 390vw * $px;
+
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 50vw * $px 108vw * $px 50vw * $px 34vw * $px;
+  }
+
+  &_logo {
+    margin-right: auto;
+    width: 330vw * $px;
+  }
+
+  .lang {
+    &-item {
+      &:after {
+        background: $white;
+      }
+    }
+  }
+
+  .up_btn {
+    position: absolute;
+    top: 50%;
+    right: 44vw * $px;
+    transform: translate(50%, -50%);
+    height: 62vw * $px;
+    width: 40vw * $px;
+    cursor: pointer;
+    background-image: url("/assets/img/svg/arrow-up-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media only screen and (min-width: $containerWidth) {
+  .footer {
+    min-height: 390px;
+
+    .container {
+      padding: 50px 108px 50px 34px;
+    }
+
+    &_logo {
+      width: 330px;
+    }
+
+    .up_btn {
+      right: 44px;
+      height: 62px;
+      width: 40px;
+    }
+  }
+}

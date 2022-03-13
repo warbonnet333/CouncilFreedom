@@ -1,0 +1,43 @@
+.header {
+  padding: 25vw * $px 30vw * $px 27vw * $px 28vw * $px;
+  background: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 113vw * $px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  transition: all 0.4s ease;
+  transform: translateY(0);
+  opacity: 1;
+
+  &.header-hidden {
+    opacity: 0;
+    transform: translateY(-110%);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &_logo {
+    margin-right: auto;
+    width: 330vw * $px;
+  }
+
+}
+
+
+@media only screen and (min-width: $containerWidth) {
+  .header {
+    padding: 25px 30px 27px 28px;
+    height: 113px;
+
+    &_logo {
+      width: 330px;
+    }
+  }
+}
