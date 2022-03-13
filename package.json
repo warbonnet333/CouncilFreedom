@@ -15,10 +15,10 @@
     "> 1%",
     "last 3 version"
   ],
-  "author": "Alexander Panov",
+  "author": "Vlad Bondar",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abyss-soft/webpack-template-base.git"
+    "url": "git+https://github.com/warbonnet333/CouncilFreedom.git"
   },
   "license": "MIT",
   "jest": {
