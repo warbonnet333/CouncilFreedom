@@ -30,6 +30,9 @@ function initEvents() {
 
   const navTriggers = document.querySelector(".js-nav-container");
   navTriggers.addEventListener("click", onNavClick);
+
+  const nextScreenTrigger = document.querySelector(".js-next-screen");
+  nextScreenTrigger.addEventListener("click", () => scrollToElement(document.querySelector(".js-nav-container")));
 }
 
 function scrollToTop() {
@@ -64,5 +67,17 @@ function onNavClick(ev) {
 
   const targetInd = target.dataset.targetBlock;
   const targetBlock = [...document.querySelectorAll(".js-target-block")][targetInd];
+  targetBlock.scrollIntoView({behavior: "smooth"});
+}
+
+function scrollToElement(element) {
+  if(!element) return;
+
+  element.scrollIntoView({behavior: "smooth"});
+}
+
+function onNextScreen() {
+  const targetBlock = document.querySelector(".js-nav-container");
+
   targetBlock.scrollIntoView({behavior: "smooth"});
 }

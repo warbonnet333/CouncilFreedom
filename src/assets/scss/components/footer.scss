@@ -23,18 +23,11 @@
     }
   }
 
-  .up_btn {
+  .arr_btn {
     position: absolute;
     top: 50%;
     right: 44vw * $px;
     transform: translate(50%, -50%);
-    height: 62vw * $px;
-    width: 40vw * $px;
-    cursor: pointer;
-    background-image: url("/assets/img/svg/arrow-up-white.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
@@ -50,10 +43,8 @@
       width: 330px;
     }
 
-    .up_btn {
+    .arr_btn {
       right: 44px;
-      height: 62px;
-      width: 40px;
     }
   }
 }

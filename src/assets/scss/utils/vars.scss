@@ -9,23 +9,13 @@ $mainFont: Circe, sans-serif;
 
 // Sizes
 $containerWidth: 1600px;
-$px: 0.0625;
+$px: 0.0625; // 1600(ширина макету) / 100 (%)
 
 $mainFontColor: $black;
 $mainFontWeight: 400;
 $mainLineHeight: 1.2;
-
-:root {
-  --fontSize: 24vw * $px;
-}
-
-@media only screen and (min-width: $containerWidth) {
-  :root {
-    --fontSize: 24px;
-  }
-}
-
-$mainFontSize: var(--fontSize);
+$mainFontSize: 24vw * $px;
+$mainFontSizeMax: 24px;
 
 
 //$desktopWidth            : 1280px;

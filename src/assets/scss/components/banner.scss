@@ -6,12 +6,19 @@
   display: flex;
   align-items: center;
   padding-top: 113vw * $px;
+  position: relative;
 
   &_text {
     padding: 0 160vw * $px;
     font-weight: 700;
     font-size: 96vw * $px;
     text-transform: uppercase;
+  }
+
+  .arr_btn {
+    position: absolute;
+    right: 30vw * $px;
+    bottom: 30vw * $px;
   }
 }
 
