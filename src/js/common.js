@@ -1,7 +1,8 @@
+import $ from "jquery";
+
 const ready = () => {
   initHeaderScroll();
   initNavMenu();
-
   initEvents();
 };
 
@@ -25,14 +26,10 @@ function initHeaderScroll() {
 }
 
 function initEvents() {
-  const scrollTopBtn = document.querySelector(".js-scroll-top");
-  scrollTopBtn.addEventListener("click", scrollToTop);
-
-  const navTriggers = document.querySelector(".js-nav-container");
-  navTriggers.addEventListener("click", onNavClick);
-
-  const nextScreenTrigger = document.querySelector(".js-next-screen");
-  nextScreenTrigger.addEventListener("click", () => scrollToElement(document.querySelector(".js-nav-container")));
+  $(document).on("click", ".js-scroll-top", scrollToTop);
+  $(document).on("click", ".js-nav-container", onNavClick);
+  $(document).on("click", ".js-next-screen", () => scrollToElement(document.querySelector(".js-nav-container")));
+  $(document).on("click", ".js-help-btn", onHelpBtnClick);
 }
 
 function scrollToTop() {
@@ -76,8 +73,11 @@ function scrollToElement(element) {
   element.scrollIntoView({behavior: "smooth"});
 }
 
-function onNextScreen() {
-  const targetBlock = document.querySelector(".js-nav-container");
 
-  targetBlock.scrollIntoView({behavior: "smooth"});
+function onHelpBtnClick(e) {
+  const btn = e.currentTarget;
+  const formLink = btn.dataset.link;
+
+  if(!formLink) return false;
+  window.open(formLink, "_blank");
 }

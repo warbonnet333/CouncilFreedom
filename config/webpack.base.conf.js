@@ -96,6 +96,12 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].[hash].css`,
     }),
+    new HtmlWebpackPlugin({  // Also generate a test.html
+      // hash: false,
+      inject: true,
+      template: `${PATHS.src}/en/index.html`,
+      filename: "./en/index.html"
+    }),
     new HtmlWebpackPlugin({
       // hash: false,
       inject: true,

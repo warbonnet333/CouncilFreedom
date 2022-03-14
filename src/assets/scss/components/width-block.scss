@@ -62,6 +62,14 @@
     }
   }
 
+  p {
+    margin-bottom: 20vw * $px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
 }
 
 
@@ -95,6 +103,11 @@
         margin-bottom: 45px;
       }
 
+    }
+
+
+    p {
+      margin-bottom: 20px;
     }
 
   }

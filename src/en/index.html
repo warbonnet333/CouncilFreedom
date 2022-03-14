@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 
 <head>
   <!--deletestart-->
   <link rel="stylesheet" type="text/css" href="assets/scss/main.scss"/>
   <!--deleteend-->
+  <link rel="icon" href="/favicon.ico">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebPack-template</title>
+  <title>Council of freedom</title>
 </head>
 
 <body>
 <header class="header">
   <div class="container">
-    <a href="/" class="header_logo">
-      <img src="/assets/img/svg/logo.svg" alt="Logo">
+    <a href="/en/" class="header_logo">
+      <img src="/assets/img/svg/logo.svg" alt="Council of freedom">
     </a>
 
     <div class="lang">
-      <a href="/en" class="lang-item active">en</a>
+      <a href="/en/" class="lang-item active">en</a>
       <a href="/" class="lang-item">ua</a>
     </div>
 
@@ -35,17 +36,16 @@
 
 <div class="container">
   <div class="banner">
-    <h1 class="banner_text">Гуманітарна та медична допомога Україні</h1>
+    <h1 class="banner_text">Humanitarian and medical assistance to Ukraine</h1>
+
+    <div class="arr_btn down js-next-screen"></div>
   </div>
 
   <div class="page_nav js-nav-container"></div>
 
   <div class="width_block black">
     <div class="width_block-banner">
-      <picture>
-        <source srcset="/assets/img/black-banner@2x.png 2x, /assets/img/black-banner.png 1x"/>
-        <img src="/assets/img/black-banner.png"/>
-      </picture>
+      <img width="1600" height="340" src="/assets/img/black-banner.png"/>
     </div>
     <div class="width_block-info">
       <div class="width_block-info_title">
@@ -65,7 +65,7 @@
   <div class="blocks">
     <div class="block_one js-target-block">
       <div class="block_one-info">
-        <div class="block_one-info_title js-nav-target">Збір засобів для гуманітарної допомоги</div>
+        <div class="block_one-info_title js-nav-target">Збір коштів для гуманітарної допомоги</div>
         <div class="block_one-info_text">
           Наразі звичні ланцюги постачання недоступні, а українцям в гарячих точках
           терміново потрібні ліки, продукти, ковдри, теплий одяг та інша гуманітарна допомога.
@@ -75,10 +75,7 @@
         </div>
       </div>
       <div class="block_one-img">
-        <picture>
-          <source srcset="/assets/img/img-1@2x.png 2x, /assets/img/img-1.png 1x"/>
-          <img src="/assets/img/img-1.png"/>
-        </picture>
+        <img width="625" height="640" src="/assets/img/img-1.png"/>
       </div>
     </div>
     <div class="block_one js-target-block">
@@ -89,32 +86,26 @@
           терміново потрібні ліки, продукти, ковдри, теплий одяг та інша гуманітарна допомога.
         </div>
         <div class="">
-          <div class="block_one-info_btn btn">Надіслати кошти на гуманітарну допомогу</div>
+          <div class="block_one-info_btn btn">Заповнити анкету для надання гуманітарної допомоги</div>
         </div>
       </div>
       <div class="block_one-img">
-        <picture>
-          <source srcset="/assets/img/img-2@2x.png 2x, /assets/img/img-2.png 1x"/>
-          <img src="/assets/img/img-2.png"/>
-        </picture>
+        <img width="625" height="640" src="/assets/img/img-2.png"/>
       </div>
     </div>
     <div class="block_one js-target-block">
       <div class="block_one-info">
-        <div class="block_one-info_title js-nav-target">отримати гуманітарну допомогу</div>
+        <div class="block_one-info_title js-nav-target">Отримати гуманітарну допомогу</div>
         <div class="block_one-info_text">
           Наразі звичні ланцюги постачання недоступні, а українцям в гарячих точках
           терміново потрібні ліки, продукти, ковдри, теплий одяг та інша гуманітарна допомога.
         </div>
         <div class="">
-          <div class="block_one-info_btn btn">Надіслати кошти на гуманітарну допомогу</div>
+          <div class="block_one-info_btn btn">Заповнити анкету для отримання гуманітарної допомоги</div>
         </div>
       </div>
       <div class="block_one-img">
-        <picture>
-          <source srcset="/assets/img/img-3@2x.png 2x, /assets/img/img-3.png 1x"/>
-          <img src="/assets/img/img-3.png"/>
-        </picture>
+        <img width="625" height="640" src="/assets/img/img-3.png"/>
       </div>
     </div>
     <div class="block_one js-target-block">
@@ -130,32 +121,34 @@
         </div>
       </div>
       <div class="block_one-img">
-        <picture>
-          <source srcset="/assets/img/img-4@2x.png 2x, /assets/img/img-4.png 1x"/>
-          <img src="/assets/img/img-4.png"/>
-        </picture>
+        <img width="625" height="640" src="/assets/img/img-4.png"/>
       </div>
     </div>
   </div>
 
   <div class="width_block white half">
     <div class="width_block-banner">
-      <picture>
-        <source srcset="/assets/img/flag-banner@2x.png 2x, /assets/img/flag-banner.png 1x"/>
-        <img src="/assets/img/flag-banner.png"/>
-      </picture>
+      <img width="1600" height="340" src="/assets/img/flag-banner.png"/>
     </div>
     <div class="width_block-info">
       <div class="width_block-info_title">
         Про організацію
       </div>
       <div class="width_block-info_text">
-        Баннер + контент (который в целом описывает текущую катастрофу в стране)Баннер + контент (который в целом
-        описывает текущую катастрофу в стране)Баннер + контент (который в целом описывает текущую катастрофу в
-        стране)Баннер + контент (который в целом описывает текущую катастрофу в стране)Баннер + контент (который в целом
-        описывает текущую катастрофу в стране)Баннер + контент (который в целом описывает текущую катастрофу в
-        стране)Баннер + контент (который в целом описывает текущую катастрофу в стране)Баннер + контент (который в целом
-        описывает текущую катастрофу в стране)
+        <p>
+          Council of Freedom - об’єднання вільних духом людей з активною життєвою позицією.
+        </p>
+        <p>
+          Громадська організація Рада Свободи була створена для реалізації благодійних, соціальних та гуманітарних
+          проектів.
+        </p>
+        <p>
+          Нашою головною ідеологією завжди було - зробити людей трохи щасливішими, а світ добрішими та кращим.
+          У такий скрутний для нашої країни час, ми не можемо залишитися осторонь, і зосереджуємо всі наші зусилля та
+          інших не байдужих людей на допомозі та підтримці тих, хто цього потребує, ставши заручниками жорстокої
+          несправедливості, яка змінила життя кожного українця, та і людей по всьому світу назавжди.
+        </p>
+
       </div>
     </div>
   </div>
@@ -164,12 +157,12 @@
 
 <footer class="footer">
   <div class="container">
-    <a href="/" class="footer_logo">
+    <a href="/en/" class="footer_logo">
       <img src="/assets/img/svg/logo-white.svg" alt="Logo">
     </a>
 
     <div class="lang">
-      <a href="/" class="lang-item active">en</a>
+      <a href="/en/" class="lang-item active">en</a>
       <a href="/" class="lang-item">ua</a>
     </div>
 
@@ -182,7 +175,7 @@
       </a>
     </div>
 
-    <div class="up_btn js-scroll-top"></div>
+    <div class="arr_btn js-scroll-top"></div>
   </div>
 </footer>
 </body>
