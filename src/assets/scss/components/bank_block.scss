@@ -38,7 +38,8 @@
         align-items: center;
         font-size: 48vw * $px;
         line-height: 0.9;
-        font-variant: all-small-caps;
+        font-variant-caps: petite-caps;
+        text-transform: lowercase;
 
         &_icon {
           width: 30vw * $px;

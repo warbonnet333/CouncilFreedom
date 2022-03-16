@@ -12,7 +12,8 @@
   &-info {
     padding: 50vw * $px 100vw * $px 50vw * $px 0;
     line-height: 0.9;
-    font-variant: all-small-caps;
+    font-variant-caps: petite-caps;
+    text-transform: lowercase;
     display: flex;
     flex-flow: column;
     justify-content: center;

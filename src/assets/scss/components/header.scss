@@ -26,7 +26,10 @@
   &_logo {
     margin-right: auto;
     width: 390vw * $px;
-    object-fit: contain;
+
+    img {
+      object-fit: contain;
+    }
   }
 
 }
