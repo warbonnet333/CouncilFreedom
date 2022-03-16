@@ -53,6 +53,7 @@ a {
 .socials {
   display: flex;
   align-items: center;
+  margin-left: 60vw * $px;
 
   &-item {
     display: block;
@@ -75,7 +76,7 @@ a {
 .lang {
   display: flex;
   align-items: center;
-  margin-right: 60vw * $px;
+  margin-left: 60vw * $px;
 
   &-item {
     display: block;
@@ -129,6 +130,21 @@ a {
   }
 }
 
+p {
+  margin-bottom: 20vw * $px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.title-1 {
+  font-weight: 400;
+  font-size: 64vw * $px;
+  line-height: 0.9;
+  font-variant: all-small-caps;
+}
+
 @media only screen and (min-width: $containerWidth) {
 
   body {
@@ -141,6 +157,7 @@ a {
   }
 
   .socials {
+    margin-left: 60px;
 
     &-item {
       width: 30px;
@@ -151,7 +168,7 @@ a {
   }
 
   .lang {
-    margin-right: 60px;
+    margin-left: 60px;
 
     &-item {
       margin-right: 25px;
@@ -161,5 +178,13 @@ a {
   .arr_btn {
     height: 62px;
     width: 40px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .title-1 {
+    font-size: 64px;
   }
 }

@@ -30,6 +30,8 @@ function initEvents() {
   $(document).on("click", ".js-nav-container", onNavClick);
   $(document).on("click", ".js-next-screen", () => scrollToElement(document.querySelector(".js-nav-container")));
   $(document).on("click", ".js-help-btn", onHelpBtnClick);
+  $(document).on("click", ".js-toggle-trigger", toggleItem);
+  $(document).on("click", ".js-bank-block-trigger", () => scrollToElement(document.querySelector(".js-bank-block")));
 }
 
 function scrollToTop() {
@@ -68,7 +70,7 @@ function onNavClick(ev) {
 }
 
 function scrollToElement(element) {
-  if(!element) return;
+  if (!element) return;
 
   element.scrollIntoView({behavior: "smooth"});
 }
@@ -78,6 +80,17 @@ function onHelpBtnClick(e) {
   const btn = e.currentTarget;
   const formLink = btn.dataset.link;
 
-  if(!formLink) return false;
+  if (!formLink) return false;
   window.open(formLink, "_blank");
 }
+
+function toggleItem(e) {
+  const btn = e.currentTarget;
+  const item = btn.closest(".bank_block-list_item");
+  const $text = $(item).find(".js-toggle-target");
+
+  item.classList.toggle("active");
+  $text.slideToggle();
+}
+
+

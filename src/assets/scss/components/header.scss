@@ -25,7 +25,8 @@
 
   &_logo {
     margin-right: auto;
-    width: 330vw * $px;
+    width: 390vw * $px;
+    object-fit: contain;
   }
 
 }
@@ -40,7 +41,7 @@
     }
 
     &_logo {
-      width: 330px;
+      width: 390px;
     }
   }
 }
