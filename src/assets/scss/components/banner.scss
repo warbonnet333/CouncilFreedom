@@ -26,10 +26,9 @@
   display: flex;
   padding: 0 30vw * $px;
   background: $white;
-  font-variant-caps: petite-caps;
-  text-transform: lowercase;
   line-height: 0.9;
   overflow: hidden;
+  font-size: 18vw * $px;
 
   &-item {
     width: 100%;
@@ -90,6 +89,7 @@
 
   .page_nav {
     padding: 0 30px;
+    font-size: 18px;
 
     &-item {
 

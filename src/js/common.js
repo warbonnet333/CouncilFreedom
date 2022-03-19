@@ -47,7 +47,7 @@ function initNavMenu() {
   let navStr = "";
 
   [...items].map((item, index) => {
-    navStr += navItemMarkup(item.innerText, index);
+    navStr += navItemMarkup(item.dataset.text, index);
   });
 
   navContainer.insertAdjacentHTML("afterbegin", navStr);

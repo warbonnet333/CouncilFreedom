@@ -12,14 +12,14 @@
   &-info {
     padding: 50vw * $px 100vw * $px 50vw * $px 0;
     line-height: 0.9;
-    font-variant-caps: petite-caps;
-    text-transform: lowercase;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
 
     &_title {
+      text-transform: lowercase;
+      font-variant-caps: petite-caps;
       font-size: 64vw * $px;
       margin-bottom: 100vw * $px;
     }
@@ -27,6 +27,7 @@
     &_text {
       margin-bottom: 100vw * $px;
       font-weight: 300;
+      font-size: 30vw * $px;
     }
   }
 
@@ -56,6 +57,7 @@
       }
 
       &_text {
+        font-size: 30px;
         margin-bottom: 100px;
       }
     }
