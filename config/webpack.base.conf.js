@@ -84,6 +84,9 @@ module.exports = {
           options: { sourceMap: true, config: { path: "./postcss.config.js" } }
         }
       ]
+    }, {
+      test: /\.hbs$/,
+      use: "handlebars-loader",
     }]
   },
   resolve: {

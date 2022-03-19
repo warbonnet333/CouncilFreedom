@@ -1,6 +1,13 @@
 import $ from "jquery";
+import bankDetailTemplate from "../assets/handlebars/ua/bank-item.hbs";
+import bankDetailTemplateEn from "../assets/handlebars/en/bank-item.hbs";
+import details from "../data/details";
+
+const html = document.querySelector("html");
+const lang = html.getAttribute("lang") || "ua";
 
 const ready = () => {
+  initBankList();
   initHeaderScroll();
   initNavMenu();
   initEvents();
@@ -91,6 +98,16 @@ function toggleItem(e) {
 
   item.classList.toggle("active");
   $text.slideToggle();
+}
+
+function initBankList() {
+  const bankList = document.querySelector(".js-bank-list");
+  const markup = details.map(article =>
+    lang === "ua"
+      ? bankDetailTemplate(article)
+      : bankDetailTemplateEn(article)
+  );
+  bankList.insertAdjacentHTML("beforeend", markup.join(""));
 }
 
 
