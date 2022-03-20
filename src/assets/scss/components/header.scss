@@ -4,13 +4,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 113vw * $px;
   display: flex;
   align-items: center;
   z-index: 10;
   transition: all 0.4s ease;
   transform: translateY(0);
   opacity: 1;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   &.header-hidden {
     opacity: 0;
@@ -18,14 +18,16 @@
   }
 
   .container {
-    padding: 25vw * $px 30vw * $px 27vw * $px 28vw * $px;
+    padding: 12vw * $px 30vw * $px 18vw * $px 40vw * $px;
     display: flex;
     align-items: center;
   }
 
   &_logo {
     margin-right: auto;
-    width: 390vw * $px;
+    width: 253vw * $px;
+    display: inline-grid;
+    overflow: visible;
 
     img {
       object-fit: contain;
@@ -37,14 +39,12 @@
 
 @media only screen and (min-width: $containerWidth) {
   .header {
-    height: 113px;
-
     .container {
-      padding: 25px 30px 27px 28px;
+      padding: 13px 30px 18px 40px;
     }
 
     &_logo {
-      width: 390px;
+      width: 253px;
     }
   }
 }
