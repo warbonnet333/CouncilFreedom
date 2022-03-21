@@ -26,20 +26,27 @@
   display: flex;
   padding: 0 30vw * $px;
   background: $white;
-  line-height: 0.9;
+  line-height: 1;
   overflow: hidden;
   font-size: 25vw * $px;
 
   &-item {
     width: 100%;
-    cursor: pointer;
     display: inline-flex;
 
     &_text {
       padding: 24vw * $px 0;
       height: 100%;
       position: relative;
-      margin-right: 50vw * $px;
+      margin-right: 30vw * $px;
+      cursor: pointer;
+
+      &:hover {
+        &::after {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
 
       &::after {
         content: '';
@@ -56,19 +63,16 @@
     }
 
 
-    &:hover {
-      .page_nav-item_text::after {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
     &.active {
       font-weight: 700;
 
-      .page_nav-item_text::after {
-        transform: translateY(0);
-        opacity: 1;
+      .page_nav-item_text {
+        cursor: initial;
+
+        &::after {
+          transform: translateY(0);
+          opacity: 1;
+        }
       }
     }
 
@@ -95,7 +99,7 @@
 
       &_text {
         padding: 24px 0;
-        margin-right: 50px;
+        margin-right: 30px;
 
         &::after {
           height: 10px;

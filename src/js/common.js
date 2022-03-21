@@ -9,7 +9,7 @@ const lang = html.getAttribute("lang") || "ua";
 const ready = () => {
   initBankList();
   initHeaderScroll();
-  initNavMenu();
+  // initNavMenu();
   initEvents();
 };
 
@@ -45,35 +45,14 @@ function scrollToTop() {
   window.scrollTo({top: 0, behavior: "smooth"});
 }
 
-function initNavMenu() {
-  const items = document.querySelectorAll(".js-nav-target");
-  const navContainer = document.querySelector(".js-nav-container");
-
-  if (!items.length) return;
-
-  let navStr = "";
-
-  [...items].map((item, index) => {
-    navStr += navItemMarkup(item.dataset.text, index);
-  });
-
-  navContainer.insertAdjacentHTML("afterbegin", navStr);
-
-  function navItemMarkup(text, index) {
-    return `<div class="page_nav-item ${index === 0 ? "active" : ""}">
-      <div class="page_nav-item_text" data-target-block="${index}">${text}</div>
-    </div>`;
-  }
-}
-
 function onNavClick(ev) {
   const target = ev.target.closest(".page_nav-item_text");
 
   if (!target) return false;
 
-  const targetInd = target.dataset.targetBlock;
-  const targetBlock = [...document.querySelectorAll(".js-target-block")][targetInd];
-  targetBlock.scrollIntoView({behavior: "smooth"});
+  const targetId = target.dataset.targetBlock;
+  const targetBlock = document.getElementById(targetId);
+  targetBlock && targetBlock.scrollIntoView({behavior: "smooth"});
 }
 
 function scrollToElement(element) {
@@ -102,7 +81,8 @@ function toggleItem(e) {
 
 function initBankList() {
   const bankList = document.querySelector(".js-bank-list");
-  const markup = details.map(article =>
+  const dataType = bankList.dataset.type;
+  const markup = details[dataType].map(article =>
     lang === "ua"
       ? bankDetailTemplate(article)
       : bankDetailTemplateEn(article)

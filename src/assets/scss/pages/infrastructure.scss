@@ -1,0 +1,9 @@
+.infrastructure-page {
+  padding-top: 152vw * $px;
+}
+
+@media only screen and (min-width: $containerWidth) {
+  .infrastructure-page {
+    padding-top: 152px;
+  }
+}

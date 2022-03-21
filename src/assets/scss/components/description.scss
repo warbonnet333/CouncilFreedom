@@ -1,0 +1,42 @@
+.description {
+  padding: 90vw * $px 30vw * $px 60vw * $px;
+
+  &_img {
+    width: 100%;
+    height: 305vw * $px;
+    overflow: hidden;
+    margin-bottom: 90vw * $px;
+  }
+
+  &_info {
+    &-title {
+      font-size: 56vw * $px;
+      padding: 0 40vw * $px 0 0;
+      max-width: 50%;
+      font-variant-caps: petite-caps;
+      text-transform: lowercase;
+      line-height: 0.9;
+      float: left;
+      margin-bottom: 10vw * $px;
+    }
+  }
+}
+
+@media only screen and (min-width: $containerWidth) {
+  .description {
+    padding: 90px 30px 60px;
+
+    &_img {
+      height: 305px;
+      margin-bottom: 90px;
+    }
+
+    &_info {
+      &-title {
+        font-size: 56px;
+        padding: 0 40px 0 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

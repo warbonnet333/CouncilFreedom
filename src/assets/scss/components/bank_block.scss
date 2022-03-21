@@ -1,9 +1,12 @@
 .bank_block {
-  padding: 40vw * $px 158vw * $px 195vw * $px;
+  padding: 80vw * $px 158vw * $px 195vw * $px;
+  font-family: OpenSans, sans-serif;
 
   .title-1 {
     margin: 0 auto 50vw * $px;
     text-align: center;
+    text-transform: initial;
+    font-variant: initial;
   }
 
   &-list {
@@ -34,8 +37,6 @@
         align-items: center;
         font-size: 48vw * $px;
         line-height: 0.9;
-        font-variant-caps: petite-caps;
-        text-transform: lowercase;
 
         &_icon {
           width: 30vw * $px;
@@ -76,7 +77,7 @@
 
 @media only screen and (min-width: $containerWidth) {
   .bank_block {
-    padding: 40px 158px 195px;
+    padding: 80px 158px 195px;
 
     .title-1 {
       margin: 0 auto 50px;

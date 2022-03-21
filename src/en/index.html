@@ -19,7 +19,7 @@
     </a>
 
     <div class="lang">
-      <a href="/en/" class="lang-item active">en</a>
+      <div class="lang-item active">en</div>
       <a href="/" class="lang-item">ua</a>
     </div>
 
@@ -44,7 +44,25 @@
     <div class="arr_btn down js-next-screen"></div>
   </div>
 
-  <div class="page_nav js-nav-container"></div>
+  <div class="page_nav js-nav-container">
+    <div class="page_nav-item">
+      <div class="page_nav-item_text" data-target-block="block-1">Fundraising for humanitarian help</div>
+    </div>
+    <div class="page_nav-item">
+      <div class="page_nav-item_text" data-target-block="block-2">Humanitarian aid collection</div>
+    </div>
+    <div class="page_nav-item">
+      <div class="page_nav-item_text" data-target-block="block-3">Humanitarian aid receiving</div>
+    </div>
+    <div class="page_nav-item">
+      <a href="infrastructure.html" class="page_nav-item_text">Money collection for ruined buildings’ reconstruction and
+        infrastructure
+      </a>
+    </div>
+    <div class="page_nav-item">
+      <div class="page_nav-item_text" data-target-block="block-bank">Bank Transfer</div>
+    </div>
+  </div>
 
   <div class="width_block black">
     <div class="width_block-banner">
@@ -76,7 +94,7 @@
     <!--Block 1-->
     <div class="block_one js-target-block">
       <div class="block_one-info">
-        <div class="block_one-info_title js-nav-target" data-text="Fundraising for humanitarian help">Fundraising for humanitarian help</div>
+        <div class="block_one-info_title ">Fundraising for humanitarian help</div>
         <div class="block_one-info_text">
           <p>
             The War has stopped to organize supplying the most important – medicines and food. Many people has lost
@@ -95,7 +113,7 @@
     <!--Block 2-->
     <div class="block_one js-target-block">
       <div class="block_one-info">
-        <div class="block_one-info_title js-nav-target" data-text="Humanitarian aid collection">Humanitarian aid collection</div>
+        <div class="block_one-info_title ">Humanitarian aid collection</div>
         <div class="block_one-info_text">
           <p>
             Any help is useful. Food, clothes, medicines, medicine equipment, first aid kits - any that can help injured
@@ -118,7 +136,7 @@
     <!--Block 3-->
     <div class="block_one js-target-block">
       <div class="block_one-info">
-        <div class="block_one-info_title js-nav-target" data-text="Humanitarian aid receiving">Humanitarian aid receiving</div>
+        <div class="block_one-info_title ">Humanitarian aid receiving</div>
         <div class="block_one-info_text">
           <p>
             You lost your home, you are forced to leave home or hiding to survive? We can help you to receive
@@ -140,7 +158,8 @@
     <!--Block 4-->
     <div class="block_one js-target-block">
       <div class="block_one-info">
-        <div class="block_one-info_title js-nav-target" data-text="Money collection for ruined buildings’ reconstruction and infrastructure">
+        <div class="block_one-info_title "
+             data-text="Money collection for ruined buildings’ reconstruction and infrastructure">
           Money collection for ruined buildings’ reconstruction and infrastructure
         </div>
         <div class="block_one-info_text">
@@ -154,7 +173,7 @@
           </p>
         </div>
         <div class="">
-          <button class="block_one-info_btn btn js-bank-block-trigger">Money transfers</button>
+          <a href="infrastructure.html" class="block_one-info_btn btn">Money transfers</a>
         </div>
       </div>
       <div class="block_one-img">
@@ -163,6 +182,8 @@
     </div>
 
   </div>
+
+  <div class="title-1 width_block_pre-title ">We are during the war</div>
 
   <div class="width_block white half">
     <div class="width_block-banner">
@@ -190,9 +211,9 @@
     </div>
   </div>
 
-  <div class="bank_block js-bank-block js-target-block">
-    <div class="bank_block-title title-1 js-nav-target" data-text="Bank Transfer">Bank Transfer</div>
-    <div class="bank_block-list js-bank-list"></div>
+  <div class="bank_block js-bank-block js-target-block" id="block-bank" >
+    <div class="bank_block-title title-1 ">Bank Transfer</div>
+    <div class="bank_block-list js-bank-list" data-type="index"></div>
   </div>
 
 </div>
@@ -204,7 +225,7 @@
     </a>
 
     <div class="lang">
-      <a href="/en/" class="lang-item active">en</a>
+      <div class="lang-item active">en</div>
       <a href="/" class="lang-item">ua</a>
     </div>
 

@@ -6,13 +6,14 @@ $blue: #3A83F7;
 $white: #fff;
 
 // Font
-$mainFont: Circe, sans-serif;
+$mainFont: Roboto, sans-serif;
 
 // Sizes
 $containerWidth: 1600px;
 $px: 0.0625; // 1600(ширина макету) / 100 (%)
 
 $mainFontColor: $black;
+$bodyWhite: #F7F8F9;
 $mainFontWeight: 400;
 $mainLineHeight: 1.2;
 $mainFontSize: 24vw * $px;

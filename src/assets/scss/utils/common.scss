@@ -10,6 +10,7 @@ body {
   font-size: $mainFontSize;
   font-weight: $mainFontWeight;
   line-height: $mainLineHeight;
+  background: $bodyWhite;
 }
 
 img, picture {
@@ -29,6 +30,10 @@ a {
   width: 100%;
   margin: 0 auto;
   max-width: $containerWidth;
+
+  &.white {
+    background: $white;
+  }
 }
 
 .btn {
@@ -80,7 +85,7 @@ a {
 
   &-item {
     display: block;
-    margin-right: 25vw * $px;
+    margin-left: 25vw * $px;
     line-height: 1;
     overflow: hidden;
     position: relative;
@@ -102,10 +107,6 @@ a {
       &:after {
         transform: translateX(0);
       }
-    }
-
-    &:last-of-type {
-      margin-right: 0;
     }
   }
 }
@@ -131,7 +132,7 @@ a {
 }
 
 p {
-  margin-bottom: 20vw * $px;
+  margin-bottom: 22vw * $px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -172,7 +173,7 @@ p {
     margin-left: 60px;
 
     &-item {
-      margin-right: 25px;
+      margin-left: 25px;
     }
   }
 
@@ -182,7 +183,7 @@ p {
   }
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .title-1 {

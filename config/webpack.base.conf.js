@@ -99,17 +99,25 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].[hash].css`,
     }),
-    new HtmlWebpackPlugin({  // Also generate a test.html
-      // hash: false,
+    new HtmlWebpackPlugin({
       inject: true,
       template: `${PATHS.src}/en/index.html`,
-      filename: "./en/index.html"
+      filename: "en/index.html"
     }),
     new HtmlWebpackPlugin({
-      // hash: false,
+      inject: true,
+      template: `${PATHS.src}/en/infrastructure.html`,
+      filename: "en/infrastructure.html"
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: `${PATHS.src}/infrastructure.html`,
+      filename: "infrastructure.html"
+    }),
+    new HtmlWebpackPlugin({
       inject: true,
       template: `${PATHS.src}/index.html`,
-      filename: "./index.html"
+      filename: "index.html"
     }),
     new HtmlPluginRemove(/<!--deletestart-->[\s\S]*<!--deleteend-->/gi),
     new CopyWebpackPlugin([

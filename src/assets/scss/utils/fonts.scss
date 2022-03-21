@@ -28,3 +28,51 @@
   font-weight: 300;
   font-stretch: normal;
 }
+
+@font-face {
+  font-family: Roboto;
+  src: url('/assets/fonts/Roboto-Light.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('/assets/fonts/Roboto-Regular.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Circe;
+  src: url('/assets/fonts/Roboto-Bold.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('/assets/fonts/OpenSans-Light.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('/assets/fonts/OpenSans-Regular.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('/assets/fonts/OpenSans-Bold.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
