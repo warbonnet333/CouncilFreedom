@@ -1,0 +1,5 @@
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.councilfreedom\.com$ [NC]
+RewriteRule ^(.*)$ https://councilfreedom.com/$1 [R=301,L]
