@@ -1,5 +1,19 @@
 Options +SymLinksIfOwnerMatch
 RewriteEngine On
+RewriteBase /
 
+#Redirect from /index.html to /
+RewriteCond %{THE_REQUEST} ^.*\/index\.html?\ HTTP/
+RewriteRule ^(.*)index\.html?$ "/$1" [R=301,L]
+
+#Remove useless slashes
+RewriteCond %{THE_REQUEST} //
+RewriteRule .* /$0 [R=301,L]
+
+#Redirect from www.councilfreedom to councilfreedom
 RewriteCond %{HTTP_HOST} ^www.councilfreedom\.com$ [NC]
 RewriteRule ^(.*)$ https://councilfreedom.com/$1 [R=301,L]
+
+RewriteRule ^index / [R,L]
+
+ErrorDocument 404 /index.html
