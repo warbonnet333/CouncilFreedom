@@ -9,6 +9,7 @@ module.exports = {
   },
   entry: {
     app: PATHS.src,
+    // test: PATHS.test,
   },
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
