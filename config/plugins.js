@@ -8,15 +8,11 @@ const plugins = [
   new MiniCssExtractPlugin({
     filename: `${PATHS.assets}css/[name].[hash].css`,
   }),
+
   new HtmlWebpackPlugin({
     inject: true,
     template: `${PATHS.src}/index.html`,
     filename: "index.html"
-  }),
-  new HtmlWebpackPlugin({
-    inject: true,
-    template: `${PATHS.src}/pages/en/index.html`,
-    filename: "en/index.html"
   }),
   new HtmlWebpackPlugin({
     inject: true,
@@ -37,6 +33,26 @@ const plugins = [
     inject: true,
     template: `${PATHS.src}/pages/infrastructure.html`,
     filename: "infrastructure.html"
+  }),
+  new HtmlWebpackPlugin({
+    inject: true,
+    template: `${PATHS.src}/pages/en/index.html`,
+    filename: "en/index.html"
+  }),
+  new HtmlWebpackPlugin({
+    inject: true,
+    template: `${PATHS.src}/pages/en/about-humanitarian-aid.html`,
+    filename: "en/about-humanitarian-aid.html"
+  }),
+  new HtmlWebpackPlugin({
+    inject: true,
+    template: `${PATHS.src}/pages/en/send-humanitarian.html`,
+    filename: "en/send-humanitarian.html"
+  }),
+  new HtmlWebpackPlugin({
+    inject: true,
+    template: `${PATHS.src}/pages/en/get-humanitarian.html`,
+    filename: "en/get-humanitarian.html"
   }),
   new HtmlWebpackPlugin({
     inject: true,
