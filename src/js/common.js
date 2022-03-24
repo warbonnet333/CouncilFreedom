@@ -81,6 +81,8 @@ function toggleItem(e) {
 
 function initBankList() {
   const bankList = document.querySelector(".js-bank-list");
+  if(!bankList) return;
+
   const dataType = bankList.dataset.type;
   const markup = details[dataType].map(article =>
     lang === "ua"
