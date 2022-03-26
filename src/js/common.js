@@ -35,10 +35,11 @@ function initHeaderScroll() {
 function initEvents() {
   $(document).on("click", ".js-scroll-top", scrollToTop);
   $(document).on("click", ".js-nav-container", onNavClick);
-  $(document).on("click", ".js-next-screen", () => scrollToElement(document.querySelector(".js-nav-container")));
+  $(document).on("click", ".js-next-screen", () => scrollToElement(document.querySelector(".width_block.black")));
   $(document).on("click", ".js-help-btn", onHelpBtnClick);
   $(document).on("click", ".js-toggle-trigger", toggleItem);
   $(document).on("click", ".js-bank-block-trigger", () => scrollToElement(document.querySelector(".js-bank-block")));
+  $(document).on("click", ".js-menu-toggle", menuToggle);
 }
 
 function scrollToTop() {
@@ -90,6 +91,11 @@ function initBankList() {
       : bankDetailTemplateEn(article)
   );
   bankList.insertAdjacentHTML("beforeend", markup.join(""));
+}
+
+function menuToggle() {
+  const menu = document.querySelector(".js-nav-container");
+  menu && menu.classList.toggle("opened");
 }
 
 

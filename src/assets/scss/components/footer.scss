@@ -52,3 +52,32 @@
     }
   }
 }
+
+
+@media only screen and (max-width: $mobileWidth) {
+  .footer {
+    min-height: 220vw * $pxm;
+    position: relative;
+
+    .container {
+      padding: 13vw * $pxm 20vw * $pxm;
+      position: static;
+    }
+
+    &_logo {
+      width: 110vw * $pxm;
+      min-width: 110vw * $pxm;
+    }
+
+    .arr_btn {
+      right: 20vw * $pxm;
+      bottom: 25vw * $pxm;
+      transform: none;
+      top: auto;
+    }
+
+    .lang {
+      display: none;
+    }
+  }
+}

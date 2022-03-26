@@ -30,6 +30,10 @@
   overflow: hidden;
   font-size: 25vw * $px;
 
+  .lang {
+    display: none;
+  }
+
   &-item {
     width: 100%;
     display: inline-flex;
@@ -80,6 +84,7 @@
 }
 
 @media only screen and (min-width: $containerWidth) {
+
   .banner {
     max-height: 800px;
     padding-top: 113px;
@@ -109,3 +114,120 @@
     }
   }
 }
+
+
+@media only screen and (max-width: $mobileWidth) {
+  .banner {
+    max-height: 100vh;
+    min-height: 50vw;
+
+    &_text {
+      padding: 0 15vw * $pxm;
+      font-size: 36vw * $pxm;
+    }
+
+    .arr_btn {
+      right: 20vw * $pxm;
+      bottom: 25vw * $pxm;
+    }
+  }
+
+  .page_nav {
+    padding: 0;
+    font-size: 22vw * $pxm;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(110%);
+    transition: all 0.3s ease;
+
+    &:before {
+      content: "";
+      background-image: url("/assets/img/trident.png");
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-position-x: 20vw;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.15;
+    }
+
+    &.opened {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    &-item {
+      padding: 0;
+      border-bottom: 2px solid rgba($black, 0.15);
+
+
+      &.active {
+        border-bottom: 2px solid transparent;
+
+        .page_nav-item_text {
+          background: rgba($black, 0.15);
+        }
+      }
+
+      &_text {
+        padding: 24vw * $pxm 30vw * $pxm;
+        margin-right: 0;
+        width: 100%;
+
+        &::after {
+          display: none;
+        }
+      }
+
+    }
+
+    .lang {
+      position: absolute;
+      top: 20vw * $pxm;
+      left: 20vw * $pxm;
+      margin: 0;
+      height: 26vw * $pxm;
+      display: flex;
+
+      &-item {
+        margin-left: 0;
+        margin-right: 25vw * $pxm;
+      }
+    }
+
+    .socials {
+      position: absolute;
+      bottom: 20vw * $pxm;
+      left: 20vw * $pxm;
+      margin: 0;
+    }
+
+    .close_btn {
+      position: absolute;
+      top: 20vw * $pxm;
+      right: 20vw * $pxm;
+      width: 26vw * $pxm;
+      height: 26vw * $pxm;
+      background-image: url("/assets/img/svg/close-btn.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+

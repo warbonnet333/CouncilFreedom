@@ -71,3 +71,42 @@
 
   }
 }
+
+
+@media only screen and (max-width: $mobileWidth) {
+  .block_one {
+    padding: 20vw * $pxm 15vw * $pxm;
+    margin: 20vw * $pxm auto 50vw * $pxm;
+    flex-flow: column;
+
+    &:last-of-type {
+      margin-bottom: 20vw * $pxm;
+    }
+
+    &-info {
+      padding: 0 0 35vw * $pxm;
+
+      &_title {
+        font-size: 28vw * $pxm;
+        margin-bottom: 40vw * $pxm;
+        padding-right: 40vw * $pxm;
+      }
+
+      &_btn {
+        width: 100%;
+      }
+
+      &_text {
+        font-size: 18vw * $pxm;
+        margin-bottom: 40vw * $pxm;
+      }
+    }
+
+    &-img {
+      width: 100vw;
+      min-width: auto;
+      height: 100vw;
+    }
+
+  }
+}

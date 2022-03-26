@@ -147,6 +147,12 @@ p {
   text-transform: lowercase;
 }
 
+.desktop-hidden {
+  @media only screen and (min-width: $mobileWidth + 1) {
+    display: none !important;
+  }
+}
+
 @media only screen and (min-width: $containerWidth) {
 
   body {
@@ -190,3 +196,54 @@ p {
     font-size: 64px;
   }
 }
+
+
+@media only screen and (max-width: $mobileWidth) {
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  body {
+    font-size: $mainFontSizeMobile;
+  }
+
+  .btn {
+    padding: 20vw * $pxm 15vw * $pxm;
+    font-size: 22vw * $pxm;
+    width: 100%;
+    text-align: center;
+  }
+
+  .socials {
+    margin-left: 60vw * $pxm;
+
+    &-item {
+      width: 30vw * $pxm;
+      height: 30vw * $pxm;
+      margin-right: 30vw * $pxm;
+    }
+
+  }
+
+  .lang {
+    margin-left: 60vw * $pxm;
+
+    &-item {
+      margin-left: 25vw * $pxm;
+    }
+  }
+
+  .arr_btn {
+    height: 62vw * $pxm;
+    width: 40vw * $pxm;
+  }
+
+  p {
+    margin-bottom: 20vw * $pxm;
+  }
+
+  .title-1 {
+    font-size: 34vw * $pxm;
+  }
+}
+
