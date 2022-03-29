@@ -12,7 +12,7 @@ $mainFont: Roboto, sans-serif;
 $containerWidth: 1600px;
 $mobileWidth: 768px;
 $px: 0.0625; //  100 / 1600(ширина макету)
-$pxm: 0.267; //  100 / 375(ширина макету)
+$pxm: 0.2083; //  100 / 480(ширина макету)
 
 $mainFontColor: $black;
 $bodyWhite: #F7F8F9;
@@ -20,4 +20,4 @@ $mainFontWeight: 400;
 $mainLineHeight: 1.2;
 $mainFontSize: 24vw * $px;
 $mainFontSizeMax: 24px;
-$mainFontSizeMobile: 18px;
+$mainFontSizeMobile: 20px;

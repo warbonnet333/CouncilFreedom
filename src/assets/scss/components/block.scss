@@ -75,21 +75,21 @@
 
 @media only screen and (max-width: $mobileWidth) {
   .block_one {
-    padding: 20vw * $pxm 15vw * $pxm;
-    margin: 20vw * $pxm auto 50vw * $pxm;
-    flex-flow: column;
+    padding: 0;
+    margin: 0;
+    flex-flow: column-reverse;
 
     &:last-of-type {
-      margin-bottom: 20vw * $pxm;
+      margin-bottom: 0;
     }
 
     &-info {
-      padding: 0 0 35vw * $pxm;
+      padding: 50vw * $pxm 16vw * $pxm 100vw * $pxm;
 
       &_title {
-        font-size: 28vw * $pxm;
-        margin-bottom: 40vw * $pxm;
-        padding-right: 40vw * $pxm;
+        font-size: 50vw * $pxm;
+        margin-bottom: 50vw * $pxm;
+        padding-right: 0
       }
 
       &_btn {
@@ -97,8 +97,8 @@
       }
 
       &_text {
-        font-size: 18vw * $pxm;
-        margin-bottom: 40vw * $pxm;
+        font-size: 20vw * $pxm;
+        margin-bottom: 50vw * $pxm;
       }
     }
 

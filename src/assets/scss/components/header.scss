@@ -55,34 +55,19 @@
 
 @media only screen and (max-width: $mobileWidth) {
   .header {
-    max-height: 75vw * $pxm;
-
-    .lang,
-    .socials {
-      display: none;
-    }
+    max-height: 70vw * $pxm;
 
     .container {
-      padding: 13vw * $pxm 20vw * $pxm;
+      padding: 12vw * $pxm 16vw * $pxm;
     }
 
     &_logo {
-      width: 110vw * $pxm;
+      width: 116vw * $pxm;
+      min-width: 116vw * $pxm;
     }
 
-    .burger_btn{
-      width: 26vw * $pxm;
-      height: 26vw * $pxm;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: space-around;
-
-      span {
-        height: 3vw * $pxm;
-        width: 100%;
-        background: $black;
-      }
+    .burger_btn {
+      display: none;
     }
   }
 

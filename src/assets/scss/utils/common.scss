@@ -199,6 +199,23 @@ p {
 
 
 @media only screen and (max-width: $mobileWidth) {
+  .custom-scroll,
+  .page_nav {
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #d4d4d4;
+    }
+  }
+
   .mobile-hidden {
     display: none !important;
   }
@@ -208,28 +225,28 @@ p {
   }
 
   .btn {
-    padding: 20vw * $pxm 15vw * $pxm;
-    font-size: 22vw * $pxm;
+    padding: 26vw * $pxm;
+    font-size: 30vw * $pxm;
     width: 100%;
     text-align: center;
   }
 
   .socials {
-    margin-left: 60vw * $pxm;
+    margin-left: 24vw * $pxm;
 
     &-item {
-      width: 30vw * $pxm;
-      height: 30vw * $pxm;
-      margin-right: 30vw * $pxm;
+      width: 20vw * $pxm;
+      height: 20vw * $pxm;
+      margin-right: 15vw * $pxm;
     }
 
   }
 
   .lang {
-    margin-left: 60vw * $pxm;
+    margin-left: 20vw * $pxm;
 
     &-item {
-      margin-left: 25vw * $pxm;
+      margin-left: 10vw * $pxm;
     }
   }
 
@@ -243,7 +260,7 @@ p {
   }
 
   .title-1 {
-    font-size: 34vw * $pxm;
+    font-size: 50vw * $pxm;
   }
 }
 

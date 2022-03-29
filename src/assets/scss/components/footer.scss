@@ -56,17 +56,17 @@
 
 @media only screen and (max-width: $mobileWidth) {
   .footer {
-    min-height: 220vw * $pxm;
+    min-height: 100vw;
     position: relative;
 
     .container {
-      padding: 13vw * $pxm 20vw * $pxm;
+      padding: 30vw * $pxm 16vw * $pxm;
       position: static;
     }
 
     &_logo {
-      width: 110vw * $pxm;
-      min-width: 110vw * $pxm;
+      width: 150vw * $pxm;
+      min-width: 150vw * $pxm;
     }
 
     .arr_btn {
@@ -76,8 +76,27 @@
       top: auto;
     }
 
+    .socials {
+      margin-left: 30vw * $pxm;
+
+      &-item {
+        width: 30vw * $pxm;
+        height: 30vw * $pxm;
+        margin-right: 30vw * $pxm;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+
     .lang {
-      display: none;
+      font-size: 25vw * $pxm;
+      line-height: 1.35;
+
+      &-item {
+        margin-left: 25vw * $pxm;
+      }
     }
   }
 }
