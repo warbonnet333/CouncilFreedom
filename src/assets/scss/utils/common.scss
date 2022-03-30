@@ -147,6 +147,10 @@ p {
   text-transform: lowercase;
 }
 
+.inner-page {
+  padding-top: 152vw * $px;
+}
+
 .desktop-hidden {
   @media only screen and (min-width: $mobileWidth + 1) {
     display: none !important;
@@ -154,6 +158,10 @@ p {
 }
 
 @media only screen and (min-width: $containerWidth) {
+
+  .inner-page {
+    padding-top: 152px;
+  }
 
   body {
     font-size: $mainFontSizeMax;
@@ -199,6 +207,11 @@ p {
 
 
 @media only screen and (max-width: $mobileWidth) {
+
+  .inner-page {
+    padding-top: 90vw * $pxm;
+  }
+
   .custom-scroll,
   .page_nav {
     &::-webkit-scrollbar-track {

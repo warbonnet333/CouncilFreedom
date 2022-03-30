@@ -116,3 +116,49 @@
 
   }
 }
+
+
+@media only screen and (max-width: $mobileWidth) {
+  .bank_block {
+    padding: 40vw * $pxm 0 100vw * $pxm;
+
+    .title-1 {
+      padding: 0 16vw * $pxm;
+      margin: 0 auto 50vw * $pxm;
+      text-align: left;
+    }
+
+    &-list {
+      &_item {
+        border-bottom: 6vw * $pxm solid $grey;
+
+        &:first-of-type {
+          border-top: 6vw * $pxm solid $grey;
+        }
+
+        &.active {
+          border-bottom: 6vw * $pxm solid transparent;
+        }
+
+        .toggle_title {
+          min-height: 126vw * $pxm;
+          padding: 16vw * $pxm 20vw * $pxm;
+          font-size: 38vw * $pxm;
+
+          &_icon {
+            width: 30vw * $pxm;
+            height: 30vw * $pxm;
+
+          }
+        }
+
+        .toggle_text {
+          padding: 50vw * $pxm 20vw * $pxm;
+          font-size: 20vw * $pxm;
+        }
+
+      }
+    }
+
+  }
+}

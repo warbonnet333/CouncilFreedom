@@ -29,6 +29,10 @@
       //font-weight: 300;
       font-size: 24vw * $px;
       line-height: 1;
+
+      ul {
+        padding-left: 50vw * $px;
+      }
     }
   }
 
@@ -60,6 +64,11 @@
       &_text {
         font-size: 24px;
         margin-bottom: 100px;
+
+        ul {
+          padding-left: 50px;
+        }
+
       }
     }
 
@@ -99,6 +108,10 @@
       &_text {
         font-size: 20vw * $pxm;
         margin-bottom: 50vw * $pxm;
+
+        ul {
+          padding-left: 50vw * $pxm;
+        }
       }
     }
 
