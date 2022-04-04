@@ -33,6 +33,30 @@
     right: 44vw * $px;
     transform: translate(50%, -50%);
   }
+
+  &_contacts {
+    &_item {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 10vw * $px;
+      font-variant-caps: petite-caps;
+      text-transform: lowercase;
+
+      a {
+        transition: all 0.3s ease;
+
+        @media only screen and (min-width: $mobileWidth + 1) {
+          &:hover {
+            color: $yellow;
+          }
+        }
+      }
+
+      span {
+        margin-right: 10vw * $px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $containerWidth) {
@@ -49,6 +73,13 @@
 
     .arr_btn {
       right: 44px;
+    }
+
+
+    &_contacts {
+      &_item {
+        margin-top: 10px;
+      }
     }
   }
 }
@@ -96,6 +127,20 @@
 
       &-item {
         margin-left: 25vw * $pxm;
+      }
+    }
+
+
+    &_contacts {
+      &_item {
+        font-size: 22vw * $pxm;
+        line-height: 1.35;
+        margin-top: 25vw * $pxm;
+
+
+        span {
+          margin-right: 10vw * $pxm;
+        }
       }
     }
   }
