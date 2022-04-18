@@ -28,7 +28,10 @@
     margin-right: auto;
     width: 253vw * $px;
     display: inline-grid;
-    overflow: visible;
+    overflow: hidden;
+    background-color: #fff;
+    border: none;
+    outline: none;
 
     img {
       object-fit: contain;
