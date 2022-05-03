@@ -5,6 +5,10 @@
   margin: 50vw * $px auto 100vw * $px;
   flex-flow: row-reverse;
 
+  &.align-top {
+    align-items: flex-start;
+  }
+
   &:last-of-type {
     margin-bottom: 50vw * $px;
   }

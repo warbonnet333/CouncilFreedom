@@ -50,6 +50,10 @@ a {
   border: none;
   text-align: left;
 
+  &.big {
+    padding: 60vw * $px 100vw * $px;
+  }
+
   &:hover {
     text-decoration: underline;
   }
@@ -170,6 +174,10 @@ p {
   .btn {
     padding: 25px 38px;
     font-size: 30px;
+
+    &.big {
+      padding: 60px 100px;
+    }
   }
 
   .socials {

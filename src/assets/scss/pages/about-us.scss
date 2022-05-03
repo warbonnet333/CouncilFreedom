@@ -1,0 +1,62 @@
+.about-us-page {
+  .block_one {
+    &-img {
+      height: auto;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  .description_info-btns {
+    margin: 100vw * $px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn.big {
+      min-width: 660vw * $px;
+      text-align: center;
+      margin: 0 18vw * $px;
+      font-variant: initial;
+      text-transform: initial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.gray {
+        background-color: $grey;
+        color: $black;
+      }
+
+      img {
+        width: 32vw * $px;
+        margin-right: 17vw * $px;
+      }
+
+    }
+  }
+
+}
+
+@media only screen and (min-width: $containerWidth) {
+  .about-us-page {
+
+    .description_info-btns {
+      margin: 100px auto;
+
+      .btn.big {
+        min-width: 660px;
+        margin: 0 18px;
+
+        img {
+          width: 32px;
+          margin-right: 17px;
+        }
+
+      }
+    }
+
+  }
+}

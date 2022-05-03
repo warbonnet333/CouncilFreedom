@@ -1,6 +1,10 @@
 .description {
   padding: 90vw * $px 30vw * $px 60vw * $px;
 
+  &.white {
+    background-color: #fff;
+  }
+
   &_img {
     width: 100%;
     height: 305vw * $px;

@@ -36,6 +36,11 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     inject: true,
+    template: `${PATHS.src}/pages/about-us.html`,
+    filename: "about-us.html"
+  }),
+  new HtmlWebpackPlugin({
+    inject: true,
     template: `${PATHS.src}/pages/en/index.html`,
     filename: "en/index.html"
   }),
