@@ -2,6 +2,7 @@ import $ from "jquery";
 import bankDetailTemplate from "../assets/handlebars/ua/bank-item.hbs";
 import bankDetailTemplateEn from "../assets/handlebars/en/bank-item.hbs";
 import details from "../data/details";
+import 'slick-slider';
 
 const html = document.querySelector("html");
 const lang = html.getAttribute("lang") || "ua";
@@ -11,6 +12,7 @@ const ready = () => {
   initHeaderScroll();
   // initNavMenu();
   initEvents();
+  initSlider();
 };
 
 document.addEventListener("DOMContentLoaded", ready);
@@ -96,6 +98,28 @@ function initBankList() {
 function menuToggle() {
   const menu = document.querySelector(".js-nav-container");
   menu && menu.classList.toggle("opened");
+}
+
+function initSlider() {
+  const list = document.querySelector('.js-docs-slider');
+  if(!list){
+    return;
+  }
+
+  const slickOptions = {
+    centerMode: true,
+    initialSlide: 2,
+    slidesToShow: 5,
+    swipeToSlide: true,
+    // variableWidth: true,
+    centerPadding: false,
+    adaptiveHeight: true,
+    // arrows: false,
+    prevArrow: document.querySelector(".docs-slider-btn.prev"),
+    nextArrow: document.querySelector(".docs-slider-btn.next"),
+  };
+
+  $(list).slick(slickOptions);
 }
 
 
