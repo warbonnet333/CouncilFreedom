@@ -64,12 +64,17 @@ const plugins = [
     template: `${PATHS.src}/pages/en/infrastructure.html`,
     filename: "en/infrastructure.html"
   }),
+  new HtmlWebpackPlugin({
+    inject: true,
+    template: `${PATHS.src}/pages/en/about-us.html`,
+    filename: "en/about-us.html"
+  }),
 
   new HtmlPluginRemove(/<!--deletestart-->[\s\S]*<!--deleteend-->/gi),
   new CopyWebpackPlugin([
-    { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
-    { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
-    { from: `${PATHS.src}/static`, to: "" }
+    {from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img`},
+    {from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`},
+    {from: `${PATHS.src}/static`, to: ""}
   ])
 ];
 
